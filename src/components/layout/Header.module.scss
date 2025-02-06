@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+  
+    .dark & {
+      background-color: var(--background-dark);
+      color: var(--text-dark);
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--astral);
+    }
+  
+    .nav {
+      display: flex;
+      gap: 1.5rem;
+  
+      a {
+        color: inherit;
+        text-decoration: none;
+  
+        &:hover {
+          color: var(--curious-blue);
+        }
+      }
+    }
+  
+    .themeToggle {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: inherit;
+    }
+  }

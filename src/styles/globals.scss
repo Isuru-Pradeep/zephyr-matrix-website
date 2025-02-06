@@ -1,0 +1,50 @@
+@import 'variables';
+@import 'mixins';
+
+:root {
+  --astral: rgba(51, 120, 170, 1);
+  --calypso: rgba(49, 106, 147, 1);
+  --san-juan: rgba(44, 73, 96, 1);
+  --boston-blue: rgba(52, 132, 190, 1);
+  --curious-blue: rgba(52, 143, 205, 1);
+  --casal: rgba(44, 92, 116, 1);
+
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Montserrat', sans-serif;
+
+  --h1-size: clamp(2.5rem, 5vw, 4rem);
+  --h2-size: clamp(2rem, 4vw, 3rem);
+  --h3-size: clamp(1.5rem, 3vw, 2rem);
+  --body-size: 1rem;
+
+  --background-light: white;
+  --text-light: var(--san-juan);
+  --background-dark: #1a1a1a;
+  --text-dark: white;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-light);
+  background-color: var(--background-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  color: var(--text-dark);
+  background-color: var(--background-dark);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-secondary);
+  color: var(--astral);
+}
+
+a {
+  color: var(--curious-blue);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--boston-blue);
+  }
+}
